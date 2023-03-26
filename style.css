@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#start-button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: center-button 1s ease-in-out forwards;
+  padding: 0.75rem 1.5rem;
+  font-family: inherit;
+  background-color: #5a7bb9;
+  border: 1px solid #5a7bb9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#start-button:hover,
+#start-button:active {
+  background-color: #b2bcdb;
+  border-color: #b2bcdb;
+}
+
+#form-builder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 40rem;
+}
+
+#form-builder div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 40rem;
+}
+
+#form-builder div select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#form-builder div label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #f1f1f1;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button {
+  background-color: #5a7bb9;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#switchStyles:hover {
+  background-color: #b2bcdb;
+}
+
+@keyframes center-button {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -70%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+.dark {
+  background-color: #222;
+  color: #eee;
+}
+
+.dark #form-builder {
+  background-color: #333;
+  color: #eee;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.dark input[type="text"],
+.dark select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #444;
+  background-color: #222;
+  color: #eee;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dark button,
+.dark #start-button {
+  background-color: #500281;
+  border-color: #500281;
+  color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+.dark #start-button:hover,
+.dark
+  #start-button:active
+  .dark
+  .form-submit:hover
+  .dark
+  .form-submit
+  button:active {
+  background-color: #7d3ebc;
+  border-color: #7d3ebc;
+  color: #eee;
+}
+
+.dark .form-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dark .form-input label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.dark .form-input input[type="text"]::placeholder,
+.dark .form-input select::placeholder {
+  color: #aaa;
+}
+
+.dark .form-input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: #aaa;
+}
+
+.dark .form-submit {
+  text-align: center;
+}
+
+.dark .form-submit button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark #switchStyles:hover,
+.dark #switchStyles:active {
+  background-color: #7d3ebc;
+}
+
+#success {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(7, 94, 7);
+}
